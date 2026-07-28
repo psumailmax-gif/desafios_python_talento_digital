@@ -1,0 +1,81 @@
+/* --- Configuración de Fuente Global --- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Regular */
+    color: #212529;
+    background-color: #fff;
+}
+
+/* --- Navbar Estilos --- */
+.fondo-rosa {
+    background-color: #E83E8C !important; /* Color solicitado en el PDF */
+}
+
+.logo-nav {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700; /* Bold */
+}
+
+/* --- Títulos --- */
+.section-title {
+    color: #212529;
+    font-weight: 700;
+}
+
+/* --- Estilos de las Tarjetas (Cards) --- */
+.style-card {
+    width: 100%;
+    max-width: 18rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.style-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-links a {
+    color: #17a2b8; /* Color info solicitado en PDF */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Sección Icons (Requerimiento 6) --- */
+.icons-section {
+    background-color: #17A2B8; /* Fondo Turquesa / Info del PDF */
+    padding: 40px 0;
+}
+
+.icons-wrapper i {
+    transition: opacity 0.2s;
+}
+
+.icons-wrapper i:hover {
+    opacity: 0.8;
+}
+
+/* --- Footer --- */
+.footer-section {
+    background-color: #212529; /* Fondo Oscuro solicitado */
+}
+
+.logo-footer {
+    height: 50px;
+    width: auto;
+}

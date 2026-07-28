@@ -1,0 +1,133 @@
+/* 1. Reset General y Tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000; /* Color de fondo general solicitado */
+    color: #ffffff; /* Texto general blanco */
+}
+
+/* 2. Estilos del Header (Hero) */
+.hero-section {
+    background-image: url('../img/bg-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Ocupa el 60% del alto de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 300; /* Raleway Light */
+    letter-spacing: 4px;
+}
+
+/* 3. Sección de Descripción (desc-section) */
+.desc-section {
+    background-color: #000000;
+    padding: 60px 10%;
+}
+
+.desc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.desc-text {
+    flex: 1;
+}
+
+.desc-text p {
+    font-weight: 300; /* Raleway Light */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.desc-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.desc-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+}
+
+/* 4. Sección de Características (icons-section) */
+.icons-section {
+    background-color: #1e1a13; /* Color específico requerido en la rúbrica */
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.icons-section h2 {
+    font-weight: 300; /* Raleway Light */
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.icon-item i {
+    margin-bottom: 15px;
+}
+
+.icon-item p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* 5. Sección de Galería de Imágenes */
+.gallery-section {
+    background-color: #000000;
+    padding: 60px 10%;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 32%; /* Distribuye las 3 imágenes uniformemente */
+    object-fit: cover;
+    height: 200px;
+    border-radius: 4px;
+}
+
+/* 6. Footer */
+.footer {
+    background-color: #1e1a13; /* Color de fondo para que contraste */
+    padding: 30px 10%;
+    text-align: center;
+}
+
+.footer p {
+    font-weight: 500; /* Raleway Medium para variar según instrucción */
+    font-size: 0.9rem;
+    color: #ffffff;
+}

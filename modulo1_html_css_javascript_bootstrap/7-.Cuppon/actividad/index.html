@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuppon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
+        <div class="container">
+            <!-- Logo principal blanco en pantallas grandes -->
+            <a class="navbar-brand d-none d-lg-block" href="#">
+                <img src="img/logo-white.png" alt="Cuppon Logo" height="24">
+            </a>
+            
+            <!-- Botón del menú desplegable móvil -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú desplegable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- En la versión móvil colapsada, mostramos el logo-black de fondo dentro del menú -->
+                <div class="d-lg-none text-center my-3">
+                    <img src="img/logo-black.png" alt="Cuppon" height="30" class="bg-light p-2 rounded">
+                </div>
+                
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="#">Cupones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Sección de Cupones (Grilla adaptable: 1 col en móvil, 3 en escritorio) -->
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-1.jpg" class="card-img-top" alt="Plumón Coral Fleece">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Plumón Coral Fleece Sábanas Algodón</h5>
+                        <p class="card-text text-secondary mb-1">Mundo Cama</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Av. Andrés Bello #2687</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$45.990</span>
+                            <span class="text-success fw-bold fs-5">$22.990</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-2.jpg" class="card-img-top" alt="Entrada para compartir">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Bowl Saludable Avocado & Quinoa</h5>
+                        <p class="card-text text-secondary mb-1">Green Salad & Co.</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Providencia #1432</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$12.500</span>
+                            <span class="text-success fw-bold fs-5">$5.990</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-3.jpg" class="card-img-top" alt="Clínica dental">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Evaluación Dental Completa + Limpieza</h5>
+                        <p class="card-text text-secondary mb-1">Clínica Dental OdontoSano</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Av. Apoquindo #4500</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$60.000</span>
+                            <span class="text-success fw-bold fs-5">$19.990</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-4.jpg" class="card-img-top" alt="Comida casera">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Guiso Casero Premium Zapallo y Choclo</h5>
+                        <p class="card-text text-secondary mb-1">Sabor de Abuela</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Ñuñoa #567</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$8.990</span>
+                            <span class="text-success fw-bold fs-5">$4.500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-5.jpg" class="card-img-top" alt="Parque de diversiones">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Pase Diario Juegos Infinitos Fantasía</h5>
+                        <p class="card-text text-secondary mb-1">Parque Diversión Extrema</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Av. Beauchef #850</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$25.000</span>
+                            <span class="text-success fw-bold fs-5">$12.500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="img/cupon-6.jpg" class="card-img-top" alt="Turismo San Pedro">
+                    <div class="card-body">
+                        <h5 class="card-title fw-medium">Tour Atacama: Flamencos en el Salar</h5>
+                        <p class="card-text text-secondary mb-1">Turismo San Pedro</p>
+                        <p class="card-text text-muted mb-3"><i class="fas fa-map-marker-alt me-1"></i>Caracoles #150</p>
+                        <hr class="text-muted">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="text-decoration-line-through text-muted me-2">$45.000</span>
+                            <span class="text-success fw-bold fs-5">$29.990</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 3. Formulario (Fondo success / letras claras) -->
+    <section class="bg-success text-white py-5">
+        <div class="container text-center">
+            <h3 class="fw-medium mb-3">Recibe cupones en tu correo</h3>
+            <form class="row justify-content-center g-3 mx-auto" style="max-width: 500px;">
+                <div class="col-12">
+                    <input type="text" class="form-control form-control-lg text-center" placeholder="Nombre completo" required>
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control form-control-lg text-center" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-light btn-lg w-100 fw-medium text-success">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 4. Footer -->
+    <footer class="text-center py-4 bg-light text-secondary">
+        <div class="container">
+            <img src="img/logo-black.png" alt="Cuppon Black Logo" height="24" class="mb-3">
+            <p class="mb-0">© 2026 Cuppon LATAM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

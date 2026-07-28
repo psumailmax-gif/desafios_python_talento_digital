@@ -1,0 +1,37 @@
+/* Configuración de Fuente y Colores según requerimiento */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F9FA; /* --light */
+    color: #212529;
+}
+
+/* Tipografía Light para los subtítulos e información general */
+.text-muted, .card-text {
+    font-weight: 300; /* Roboto Light */
+}
+
+/* Tipografía Medium para títulos */
+h3, h5, .navbar-brand, .fw-medium {
+    font-weight: 500; /* Roboto Medium */
+}
+
+/* Ajustes para las imágenes de las tarjetas para que no se deformen */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Bordes e interactividad para las tarjetas */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Personalización del formulario de Bootstrap */
+.form-control::placeholder {
+    color: #707070;
+}

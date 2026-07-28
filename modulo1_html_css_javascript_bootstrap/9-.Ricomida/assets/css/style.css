@@ -1,0 +1,118 @@
+/* --- Tipografía y Estilo Base --- */
+body {
+    font-family: 'Cabin', sans-serif;
+    color: #373a3c;
+    background-color: #ffffff;
+}
+
+/* Tipografía Lobster para marcas */
+.nav_titulo, footer h2, .seccion_newslatter span {
+    font-family: 'Lobster', cursive;
+}
+
+.nav_titulo {
+    font-size: 2rem;
+}
+
+/* --- Botones del Header --- */
+.header_boton {
+    background-color: transparent;
+    border: 1px solid #373a3c;
+    color: #373a3c;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.header_boton:hover {
+    background-color: #373a3c;
+    color: #ffffff;
+}
+
+/* --- Carrusel de imágenes --- */
+.seccion_carrusel img {
+    border-radius: 4px;
+    height: 180px;
+    width: 100%;
+    object-fit: cover; /* Mantiene la proporción de tus nuevas imágenes sin deformarlas */
+}
+
+/* Personalización del indicador del carrusel */
+.carousel-indicators [data-bs-target] {
+    background-color: #373a3c;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* --- Ingredientes y Preparación --- */
+.seccion_ingredientes ul {
+    list-style-type: none;
+}
+
+.seccion_ingredientes ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 6px;
+}
+
+/* Viñeta personalizada para simular puntos limpios */
+.seccion_ingredientes ul li::before {
+    content: "•";
+    color: #373a3c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Clase inyectada vía jQuery al hacer doble clic */
+.text-danger-custom {
+    color: #dc3545 !important;
+}
+
+/* --- Recetas Relacionadas (Tarjetas) --- */
+.seccion_recetas .card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.seccion_recetas .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.seccion_recetas .card-title {
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.seccion_recetas .card-title:hover {
+    color: #dc3545;
+}
+
+/* --- Suscríbete Newsletter --- */
+.seccion_newslatter {
+    padding: 60px 0;
+    background-color: #dc3545 !important; /* Rojo corporativo */
+}
+
+.seccion_newslatter_boton {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.seccion_newslatter_boton:hover {
+    background-color: #ffffff;
+    color: #dc3545 !important;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 5px solid #dc3545;
+}

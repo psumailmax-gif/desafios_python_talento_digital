@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Maximiliano Jimenez</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #16a085;
+            --text-color: #34495e;
+            --bg-sidebar: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Barra Lateral (Contacto y Educación) */
+        .sidebar {
+            background-color: var(--bg-sidebar);
+            padding: 30px 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .sidebar h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .contact-info p {
+            font-size: 0.9rem;
+            margin: 8px 0;
+            word-break: break-all;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenido Principal (Experiencia) */
+        .main-content {
+            padding: 40px;
+        }
+
+        .header-main h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-main .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin: 0 0 30px 0;
+            font-weight: 600;
+        }
+
+        .main-content h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .company-location {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .date-badge {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .timeline-item ul {
+            margin: 5px 0 0 0;
+            padding-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        .edu-item {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .edu-date {
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: block;
+        }
+
+        /* Adaptabilidad para pantallas móviles */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="../curriculo/assets/img/maximiliano.jpg" alt="Foto de perfil de Maximilia jimenez" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+            </div>
+
+            <h3>Contacto</h3>
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong><br>+56920066230</p>
+                <p><strong>Email:</strong><br>psumailmax@gmail.com</p>
+
+            </div>
+
+            <h3>Educación</h3>
+            <div class="edu-item">
+                <span class="edu-date">2026 - Actualmente</span>
+                <strong>Analista Programación</strong><br>
+                Inacap Santiago Sur
+            </div>
+            <div class="edu-item">
+                <span class="edu-date">2026</span>
+                <strong>Curso en Programación Java: Informática</strong><br>
+                Talento Digital - Santiago
+            </div>
+            <div class="edu-item">
+                <span class="edu-date">2021</span>
+                <strong>Curso y Certificada en Programación Android: Informática</strong><br>
+                DUOC, Talento Digital - Santiago
+            </div>
+            <div class="edu-item">
+                <span class="edu-date">2017</span>
+                <strong>Ingeniería En Biotecnología Vegetal: Investigación</strong><br>
+                Universidad De Concepción
+            </div>
+
+            <h3>Extras</h3>
+            <div class="contact-info">
+                <p>Licencia de conducir clase B y traslado con vehículo personal.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header-main">
+                <h1>Maximiliano Jimenez</h1>
+                <div class="subtitle">Analista Programador en Formación</div>
+            </header>
+
+            <h2>Experiencia Laboral</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Agricultura</span>
+                    <span class="date-badge">2022 - 2025</span>
+                </div>
+                <div class="company-location">Curacaví</div>
+                <ul>
+                    <li>Generación de planillas de cultivos.</li>
+                    <li>Planificación y control de rotación de cultivos.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Atención al Cliente</span>
+                    <span class="date-badge">2019 - 2021</span>
+                </div>
+                <div class="company-location">Delivery Technologies SpA (Cornershop), Santiago</div>
+                <ul>
+                    <li>Entrega de un servicio amigable y eficiente orientado a la satisfacción del cliente.</li>
+                    <li>Cumplimiento riguroso de los estándares y políticas de la empresa, logrando excelentes indicadores de servicio.</li>
+                    <li>Trabajo en terreno utilizando vehículo propio.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Asistente De Investigación</span>
+                    <span class="date-badge">2019</span>
+                </div>
+                <div class="company-location">Laboratorio CRIDESAT (Universidad de Atacama), Copiapó</div>
+                <ul>
+                    <li>Análisis de muestras cumpliendo estrictamente con los objetivos y plazos establecidos, culminando de manera exitosa en una publicación científica.</li>
+                    <li>Organización y control de muestras e insumos de laboratorio mediante el desarrollo y entrega de planillas Excel.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="job-title">Asistente De Administración (Líder)</span>
+                    <span class="date-badge">2017 - 2019</span>
+                </div>
+                <div class="company-location">KFC, Concepción</div>
+                <ul>
+                    <li>Supervisión de las operaciones diarias de la sucursal para garantizar altos niveles de productividad, logrando un incremento en las ventas del 40%.</li>
+                    <li>Liderazgo y gestión de equipos de trabajo bajo contextos de alta demanda.</li>
+                </ul>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
